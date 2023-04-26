@@ -1,0 +1,28 @@
+{
+  "name": "nueva-carpeta",
+  "version": "1.0.0",
+  "description": "configurar typescript\r configurar jest\r configurar eslint",
+  "main": "index.js",
+  "scripts": {
+    "tsc": "tsc",
+    "start": "tsc && node build/index.js",
+    "dev": "ts-node-dev src/index.ts",
+    "test": "node --experimental-vm-modules node_modules/jest/bin/jest.js",
+    "test:watch": "jest --watchAll --verbose",
+    "test:coverge": "jest --collectCoverage"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+  },
+  "devDependencies": {
+    "ts-node-dev": "2.0.0",
+    "typescript": "5.0.4",
+    "@jest/types": "29.5.0",
+    "@types/jest": "^29.5.1",
+    "@types/node": "18.16.1",
+    "jest": "29.5.0",
+    "ts-jest": "29.1.0"
+  }
+}
